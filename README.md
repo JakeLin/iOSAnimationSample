@@ -1,2 +1,2 @@
-# iOSAnimation
-This app is a iOS Animation playground to exercise different iOS Animations. The app is written in Swift
+# iOS Animation Sample
+This app is an iOS Animation playground to exercise different iOS Animations. The app is written in Swift.
