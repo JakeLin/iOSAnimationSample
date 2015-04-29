@@ -11,6 +11,7 @@ import UIKit
 class PositionViewController: UIViewController {
     @IBOutlet weak var blueSquare: UIView!
     @IBOutlet weak var redSquare: UIView!
+    @IBOutlet weak var greenSquare: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +35,9 @@ class PositionViewController: UIViewController {
         UIView.animateWithDuration(1, animations: {
             self.blueSquare.center.x = self.view.bounds.width - self.blueSquare.center.x
             self.redSquare.center.y  = self.view.bounds.height - self.redSquare.center.y
+            
+            self.greenSquare.center.x = self.view.bounds.width - self.greenSquare.center.x
+            self.greenSquare.center.y  = self.view.bounds.height - self.greenSquare.center.y
             // <_UIViewAdditiveAnimationAction: 0x7fe17b70df30>
             // println(self.view.actionForLayer(self.view.layer, forKey: "position"))
         })

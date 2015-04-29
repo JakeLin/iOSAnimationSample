@@ -66,12 +66,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.96142769610000001" green="0.19560617421842103" blue="0.2744654605526316" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <view contentMode="scaleToFill" id="uDJ-7O-6n6">
+                                <rect key="frame" x="244" y="86" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40933579642894741" green="0.80104922520526145" blue="0.036929481934210528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="cGh-aI-gZo"/>
                     <connections>
                         <outlet property="blueSquare" destination="azk-Fu-KuD" id="GHY-Yf-xjc"/>
+                        <outlet property="greenSquare" destination="uDJ-7O-6n6" id="9hC-l4-Vhd"/>
                         <outlet property="redSquare" destination="qDn-u2-IJk" id="VpL-zc-ufr"/>
                     </connections>
                 </viewController>
