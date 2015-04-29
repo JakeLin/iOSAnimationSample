@@ -16,8 +16,10 @@
                             <tableViewSection id="5Zl-t8-hX6">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="LkM-fX-yuq" style="IBUITableViewCellStyleDefault" id="f2m-kP-WQN">
+                                        <rect key="frame" x="0.0" y="64" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="f2m-kP-WQN" id="0Fm-gu-epR">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Position" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LkM-fX-yuq">
@@ -59,12 +61,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.22802925859999998" green="0.66314832058684192" blue="0.70600328947368352" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <view contentMode="scaleToFill" id="qDn-u2-IJk">
+                                <rect key="frame" x="130" y="86" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96142769610000001" green="0.19560617421842103" blue="0.2744654605526316" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="cGh-aI-gZo"/>
                     <connections>
                         <outlet property="blueSquare" destination="azk-Fu-KuD" id="GHY-Yf-xjc"/>
+                        <outlet property="redSquare" destination="qDn-u2-IJk" id="VpL-zc-ufr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DLb-We-4Yt" userLabel="First Responder" sceneMemberID="firstResponder"/>
