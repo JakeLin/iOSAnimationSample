@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AE337B3C1AF260C0005F4AE1 /* ScaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE337B3B1AF260C0005F4AE1 /* ScaleViewController.swift */; };
+		AE337B3E1AF26525005F4AE1 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE337B3D1AF26525005F4AE1 /* ColorViewController.swift */; };
 		AE8A3A591AF2598200815F4B /* OpacityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8A3A581AF2598200815F4B /* OpacityViewController.swift */; };
 		AECE40101AEF7274005A5415 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECE400F1AEF7274005A5415 /* AppDelegate.swift */; };
 		AECE40121AEF7274005A5415 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECE40111AEF7274005A5415 /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		AE337B3B1AF260C0005F4AE1 /* ScaleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleViewController.swift; sourceTree = "<group>"; };
+		AE337B3D1AF26525005F4AE1 /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 		AE8A3A581AF2598200815F4B /* OpacityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpacityViewController.swift; sourceTree = "<group>"; };
 		AECE400A1AEF7274005A5415 /* iOSAnimationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSAnimationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECE400E1AEF7274005A5415 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				AECE402F1AF03D91005A5415 /* PositionViewController.swift */,
 				AE8A3A581AF2598200815F4B /* OpacityViewController.swift */,
 				AE337B3B1AF260C0005F4AE1 /* ScaleViewController.swift */,
+				AE337B3D1AF26525005F4AE1 /* ColorViewController.swift */,
 				AECE40161AEF7274005A5415 /* Images.xcassets */,
 				AECE40181AEF7274005A5415 /* LaunchScreen.xib */,
 				AECE400D1AEF7274005A5415 /* Supporting Files */,
@@ -225,6 +228,7 @@
 				AE337B3C1AF260C0005F4AE1 /* ScaleViewController.swift in Sources */,
 				AECE40121AEF7274005A5415 /* ViewController.swift in Sources */,
 				AE8A3A591AF2598200815F4B /* OpacityViewController.swift in Sources */,
+				AE337B3E1AF26525005F4AE1 /* ColorViewController.swift in Sources */,
 				AECE40101AEF7274005A5415 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
