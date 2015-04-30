@@ -231,6 +231,14 @@
                             <view contentMode="scaleToFill" id="jSK-28-Rd5">
                                 <rect key="frame" x="100" y="100" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jake Lin" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7Dr-p2-MqF">
+                                        <rect key="frame" x="28" y="49" width="64" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="0.22802925860000001" green="0.66314832059999995" blue="0.70600328950000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
@@ -239,6 +247,7 @@
                     <navigationItem key="navigationItem" id="0YD-4W-ey7"/>
                     <connections>
                         <outlet property="blueSquare" destination="jSK-28-Rd5" id="5RP-ua-dhj"/>
+                        <outlet property="nameLabel" destination="7Dr-p2-MqF" id="l1T-c3-q6b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PZN-Mt-Bh8" userLabel="First Responder" sceneMemberID="firstResponder"/>

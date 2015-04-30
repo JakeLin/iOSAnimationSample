@@ -11,6 +11,7 @@ import UIKit
 class ColorViewController: UIViewController {
 
     @IBOutlet weak var blueSquare: UIView!
+    @IBOutlet weak var nameLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,6 +26,7 @@ class ColorViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         UIView.animateWithDuration(1, animations: {
             self.blueSquare.backgroundColor = UIColor.redColor()
+            self.nameLabel.textColor = UIColor.whiteColor()
         })
     }
 
