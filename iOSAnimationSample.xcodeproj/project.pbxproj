@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE8A3A591AF2598200815F4B /* OpacityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8A3A581AF2598200815F4B /* OpacityViewController.swift */; };
 		AECE40101AEF7274005A5415 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECE400F1AEF7274005A5415 /* AppDelegate.swift */; };
 		AECE40121AEF7274005A5415 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECE40111AEF7274005A5415 /* ViewController.swift */; };
 		AECE40151AEF7274005A5415 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECE40131AEF7274005A5415 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE8A3A581AF2598200815F4B /* OpacityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpacityViewController.swift; sourceTree = "<group>"; };
 		AECE400A1AEF7274005A5415 /* iOSAnimationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSAnimationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECE400E1AEF7274005A5415 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AECE400F1AEF7274005A5415 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				AECE40161AEF7274005A5415 /* Images.xcassets */,
 				AECE40181AEF7274005A5415 /* LaunchScreen.xib */,
 				AECE400D1AEF7274005A5415 /* Supporting Files */,
+				AE8A3A581AF2598200815F4B /* OpacityViewController.swift */,
 			);
 			path = iOSAnimationSample;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			files = (
 				AECE40301AF03D91005A5415 /* PositionViewController.swift in Sources */,
 				AECE40121AEF7274005A5415 /* ViewController.swift in Sources */,
+				AE8A3A591AF2598200815F4B /* OpacityViewController.swift in Sources */,
 				AECE40101AEF7274005A5415 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +413,7 @@
 				AECE402B1AEF7274005A5415 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AECE402C1AEF7274005A5415 /* Build configuration list for PBXNativeTarget "iOSAnimationSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				AECE402E1AEF7274005A5415 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
