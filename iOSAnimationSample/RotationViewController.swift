@@ -22,10 +22,16 @@ class RotationViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func spin () {
+        UIView.animateWithDuration(1, delay: 0, options: UIViewAnimationOptions.CurveLinear, animations: {
+            self.wheel.transform = CGAffineTransformRotate(self.wheel.transform, CGFloat(M_PI))
+        }) { (finished) -> Void in
+            self.spin()
+        }
+    }
+    
     override func viewDidAppear(animated: Bool) {
-        UIView.animateWithDuration(1, animations: {
-            self.wheel.transform = CGAffineTransformMakeRotation(CGFloat(M_PI))
-        })
+        self.spin()
     }
 
     /*
