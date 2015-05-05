@@ -24,6 +24,7 @@ class ColorViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         UIView.animateWithDuration(1, animations: {
             self.blueSquare.backgroundColor = UIColor.redColor()
             self.nameLabel.textColor = UIColor.whiteColor()

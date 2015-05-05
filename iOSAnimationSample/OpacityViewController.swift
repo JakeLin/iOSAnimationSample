@@ -23,6 +23,7 @@ class OpacityViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         UIView.animateWithDuration(1, animations: {
             self.blueSquare.alpha = 0.2
         })

@@ -25,6 +25,7 @@ class SpringViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         UIView.animateWithDuration(1, animations: {
             self.blueSquare.center.x = self.view.bounds.width - self.blueSquare.center.x
         })

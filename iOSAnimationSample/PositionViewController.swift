@@ -25,6 +25,7 @@ class PositionViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         // <null>
         // println(self.view.actionForLayer(self.view.layer, forKey: "position"))
 

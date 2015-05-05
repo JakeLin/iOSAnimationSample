@@ -31,6 +31,7 @@ class RotationViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         self.spin()
     }
 

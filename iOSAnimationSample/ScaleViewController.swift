@@ -23,6 +23,7 @@ class ScaleViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         UIView.animateWithDuration(1, animations: {
             self.blueSquare.transform = CGAffineTransformMakeScale(2.0, 2.0)
         })
