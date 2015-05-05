@@ -1,5 +1,5 @@
 //
-//  RepeatViewController.swift
+//  EasingViewController.swift
 //  iOSAnimationSample
 //
 //  Created by Jake Lin on 5/5/15.
@@ -8,13 +8,12 @@
 
 import UIKit
 
-class RepeatViewController: UIViewController {
+class EasingViewController: UIViewController {
 
     @IBOutlet weak var blueSquare: UIView!
-    
     @IBOutlet weak var redSquare: UIView!
-    
     @IBOutlet weak var greenSquare: UIView!
+    @IBOutlet weak var yellowSqaure: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,12 +31,16 @@ class RepeatViewController: UIViewController {
             self.blueSquare.center.x = self.view.bounds.width - self.blueSquare.center.x
         })
         
-        UIView.animateWithDuration(1, delay: 0, options: .Repeat, animations: {
+        UIView.animateWithDuration(1, delay: 0, options: .CurveEaseIn, animations: {
             self.redSquare.center.x = self.view.bounds.width - self.redSquare.center.x
-        }, completion: nil)
+            }, completion: nil)
         
-        UIView.animateWithDuration(1, delay: 0, options: .Repeat | .Autoreverse, animations: {
+        UIView.animateWithDuration(1, delay: 0, options: .CurveEaseOut, animations: {
             self.greenSquare.center.x = self.view.bounds.width - self.greenSquare.center.x
+            }, completion: nil)
+        
+        UIView.animateWithDuration(1, delay: 0, options: .CurveEaseInOut, animations: {
+            self.yellowSqaure.center.x = self.view.bounds.width - self.yellowSqaure.center.x
             }, completion: nil)
     }
 

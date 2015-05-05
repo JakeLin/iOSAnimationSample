@@ -129,6 +129,25 @@
                                             <segue destination="hKq-Qm-Wo1" kind="push" id="gol-c1-csi"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="FC8-Nz-Owv" style="IBUITableViewCellStyleDefault" id="TBd-xr-vvB">
+                                        <rect key="frame" x="0.0" y="328" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TBd-xr-vvB" id="Yil-kF-bS6">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Easing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FC8-Nz-Owv">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="kNR-0P-iRv" kind="push" id="dBp-KC-URn"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -352,6 +371,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nD4-zU-jtP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1052" y="3568"/>
+        </scene>
+        <!--Easing View Controller-->
+        <scene sceneID="Jis-Ay-CNC">
+            <objects>
+                <viewController id="kNR-0P-iRv" customClass="EasingViewController" customModule="iOSAnimationSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ujf-ov-K11">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="vLH-GC-j0i">
+                                <rect key="frame" x="16" y="101" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.22802925860000001" green="0.66314832059999995" blue="0.70600328950000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="cdR-k7-Cvz">
+                                <rect key="frame" x="16" y="287" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40933579640000001" green="0.80104922519999999" blue="0.036929481930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="26l-js-32n">
+                                <rect key="frame" x="16" y="380" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96338383838383834" green="0.96308892366865062" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="brU-du-GnR">
+                                <rect key="frame" x="16" y="195" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96142769610000001" green="0.19560617420000001" blue="0.27446546059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9X0-T2-lk7"/>
+                    <connections>
+                        <outlet property="blueSquare" destination="vLH-GC-j0i" id="Rb1-U3-BIe"/>
+                        <outlet property="greenSquare" destination="cdR-k7-Cvz" id="lom-vd-mGN"/>
+                        <outlet property="redSquare" destination="brU-du-GnR" id="1pO-oP-PoH"/>
+                        <outlet property="yellowSqaure" destination="26l-js-32n" id="vxa-Q4-s0C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dXR-bu-zlV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052" y="4200"/>
         </scene>
     </scenes>
     <resources>

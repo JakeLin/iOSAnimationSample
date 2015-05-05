@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AE17FD3E1AF820ED0086BC39 /* RepeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE17FD3D1AF820ED0086BC39 /* RepeatViewController.swift */; };
+		AE17FD401AF824990086BC39 /* EasingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE17FD3F1AF824990086BC39 /* EasingViewController.swift */; };
 		AE337B3C1AF260C0005F4AE1 /* ScaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE337B3B1AF260C0005F4AE1 /* ScaleViewController.swift */; };
 		AE337B3E1AF26525005F4AE1 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE337B3D1AF26525005F4AE1 /* ColorViewController.swift */; };
 		AE337B401AF2E1F0005F4AE1 /* RotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE337B3F1AF2E1F0005F4AE1 /* RotationViewController.swift */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		AE17FD3D1AF820ED0086BC39 /* RepeatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatViewController.swift; sourceTree = "<group>"; };
+		AE17FD3F1AF824990086BC39 /* EasingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasingViewController.swift; sourceTree = "<group>"; };
 		AE337B3B1AF260C0005F4AE1 /* ScaleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleViewController.swift; sourceTree = "<group>"; };
 		AE337B3D1AF26525005F4AE1 /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 		AE337B3F1AF2E1F0005F4AE1 /* RotationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotationViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				AE337B3D1AF26525005F4AE1 /* ColorViewController.swift */,
 				AE337B3F1AF2E1F0005F4AE1 /* RotationViewController.swift */,
 				AE17FD3D1AF820ED0086BC39 /* RepeatViewController.swift */,
+				AE17FD3F1AF824990086BC39 /* EasingViewController.swift */,
 				AECE40131AEF7274005A5415 /* Main.storyboard */,
 				AECE40161AEF7274005A5415 /* Images.xcassets */,
 				AECE40181AEF7274005A5415 /* LaunchScreen.xib */,
@@ -232,6 +235,7 @@
 			files = (
 				AECE40301AF03D91005A5415 /* PositionViewController.swift in Sources */,
 				AE337B3C1AF260C0005F4AE1 /* ScaleViewController.swift in Sources */,
+				AE17FD401AF824990086BC39 /* EasingViewController.swift in Sources */,
 				AECE40121AEF7274005A5415 /* ViewController.swift in Sources */,
 				AE8A3A591AF2598200815F4B /* OpacityViewController.swift in Sources */,
 				AE337B401AF2E1F0005F4AE1 /* RotationViewController.swift in Sources */,
