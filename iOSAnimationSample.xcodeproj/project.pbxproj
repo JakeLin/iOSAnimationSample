@@ -13,6 +13,7 @@
 		AE337B3C1AF260C0005F4AE1 /* ScaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE337B3B1AF260C0005F4AE1 /* ScaleViewController.swift */; };
 		AE337B3E1AF26525005F4AE1 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE337B3D1AF26525005F4AE1 /* ColorViewController.swift */; };
 		AE337B401AF2E1F0005F4AE1 /* RotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE337B3F1AF2E1F0005F4AE1 /* RotationViewController.swift */; };
+		AE80A0C61B08C9E70013F169 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE80A0C51B08C9E70013F169 /* LoginViewController.swift */; };
 		AE8A3A591AF2598200815F4B /* OpacityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8A3A581AF2598200815F4B /* OpacityViewController.swift */; };
 		AECE40101AEF7274005A5415 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECE400F1AEF7274005A5415 /* AppDelegate.swift */; };
 		AECE40121AEF7274005A5415 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECE40111AEF7274005A5415 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 		AE337B3B1AF260C0005F4AE1 /* ScaleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleViewController.swift; sourceTree = "<group>"; };
 		AE337B3D1AF26525005F4AE1 /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 		AE337B3F1AF2E1F0005F4AE1 /* RotationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotationViewController.swift; sourceTree = "<group>"; };
+		AE80A0C51B08C9E70013F169 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AE8A3A581AF2598200815F4B /* OpacityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpacityViewController.swift; sourceTree = "<group>"; };
 		AECE400A1AEF7274005A5415 /* iOSAnimationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSAnimationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECE400E1AEF7274005A5415 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				AE17FD3D1AF820ED0086BC39 /* RepeatViewController.swift */,
 				AE17FD3F1AF824990086BC39 /* EasingViewController.swift */,
 				AE17FD411AF8A84B0086BC39 /* SpringViewController.swift */,
+				AE80A0C51B08C9E70013F169 /* LoginViewController.swift */,
 				AECE40131AEF7274005A5415 /* Main.storyboard */,
 				AECE40161AEF7274005A5415 /* Images.xcassets */,
 				AECE40181AEF7274005A5415 /* LaunchScreen.xib */,
@@ -246,6 +249,7 @@
 				AE17FD3E1AF820ED0086BC39 /* RepeatViewController.swift in Sources */,
 				AE337B3E1AF26525005F4AE1 /* ColorViewController.swift in Sources */,
 				AECE40101AEF7274005A5415 /* AppDelegate.swift in Sources */,
+				AE80A0C61B08C9E70013F169 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
