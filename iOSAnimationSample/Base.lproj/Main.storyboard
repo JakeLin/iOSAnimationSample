@@ -196,7 +196,7 @@
                             </view>
                             <view contentMode="scaleToFill" id="Y6G-mp-cqc">
                                 <rect key="frame" x="100" y="100" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.22802925860000001" green="0.66314832059999995" blue="0.70600328950000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
@@ -226,12 +226,12 @@
                             </view>
                             <view contentMode="scaleToFill" id="qDn-u2-IJk">
                                 <rect key="frame" x="130" y="86" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.96142769610000001" green="0.19560617421842103" blue="0.2744654605526316" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" id="uDJ-7O-6n6">
                                 <rect key="frame" x="244" y="86" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.40933579642894741" green="0.80104922520526145" blue="0.036929481934210528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
@@ -281,7 +281,7 @@
                             </view>
                             <view contentMode="scaleToFill" id="wv0-8k-sbn">
                                 <rect key="frame" x="100" y="200" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.22802925860000001" green="0.66314832059999995" blue="0.70600328950000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
@@ -306,7 +306,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" id="jSK-28-Rd5">
                                 <rect key="frame" x="100" y="100" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jake Lin" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7Dr-p2-MqF">
                                         <rect key="frame" x="28" y="49" width="64" height="21"/>
