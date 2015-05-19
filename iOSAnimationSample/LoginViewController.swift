@@ -10,9 +10,19 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var bubble1: UIImageView!
+    @IBOutlet weak var bubble2: UIImageView!
+    @IBOutlet weak var bubble3: UIImageView!
+    @IBOutlet weak var bubble4: UIImageView!
+    @IBOutlet weak var bubble5: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.bubble1.transform = CGAffineTransformMakeScale(0, 0)
+        self.bubble2.transform = CGAffineTransformMakeScale(0, 0)
+        self.bubble3.transform = CGAffineTransformMakeScale(0, 0)
+        self.bubble4.transform = CGAffineTransformMakeScale(0, 0)
+        self.bubble5.transform = CGAffineTransformMakeScale(0, 0)
         // Do any additional setup after loading the view.
     }
 
@@ -21,6 +31,20 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+
+        UIView.animateWithDuration(0.3, delay: 0.3, usingSpringWithDamping: 0.4, initialSpringVelocity: 0, options: nil, animations: {
+            self.bubble1.transform = CGAffineTransformMakeScale(1, 1)
+            self.bubble4.transform = CGAffineTransformMakeScale(1, 1)
+            self.bubble5.transform = CGAffineTransformMakeScale(1, 1)
+        }, completion: nil)
+        
+        UIView.animateWithDuration(0.3, delay: 0.4, usingSpringWithDamping: 0.4, initialSpringVelocity: 0, options: nil, animations: {
+            self.bubble2.transform = CGAffineTransformMakeScale(1, 1)
+            self.bubble3.transform = CGAffineTransformMakeScale(1, 1)
+            }, completion: nil)
+    }
 
     /*
     // MARK: - Navigation

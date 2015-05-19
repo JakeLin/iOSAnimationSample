@@ -502,11 +502,38 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Bubble2" id="Kaj-0V-0RD">
+                                <rect key="frame" x="235" y="112" width="124" height="124"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Bubble3" id="znv-8N-2cj">
+                                <rect key="frame" x="169" y="256" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Bubble4" id="RdP-rJ-hI6">
+                                <rect key="frame" x="27" y="453" width="84" height="84"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Bubble5" id="FGA-pE-qF9">
+                                <rect key="frame" x="241" y="400" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Bubble1" id="Xwk-NV-htQ">
+                                <rect key="frame" x="16" y="209" width="130" height="130"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="ugK-Zz-va7"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="bubble1" destination="Xwk-NV-htQ" id="Nyz-1Y-jBQ"/>
+                        <outlet property="bubble2" destination="Kaj-0V-0RD" id="B1m-Xt-c5K"/>
+                        <outlet property="bubble3" destination="znv-8N-2cj" id="c7O-Y9-6ov"/>
+                        <outlet property="bubble4" destination="RdP-rJ-hI6" id="2dM-ur-7Ja"/>
+                        <outlet property="bubble5" destination="FGA-pE-qF9" id="Y22-s3-gAW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6IZ-nb-Z6V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -515,6 +542,11 @@
     </scenes>
     <resources>
         <image name="Background" width="375" height="667"/>
+        <image name="Bubble1" width="130" height="130"/>
+        <image name="Bubble2" width="124" height="124"/>
+        <image name="Bubble3" width="120" height="120"/>
+        <image name="Bubble4" width="84" height="84"/>
+        <image name="Bubble5" width="100" height="100"/>
         <image name="wheel" width="894" height="894"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
