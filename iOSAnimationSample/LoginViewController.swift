@@ -17,6 +17,10 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var bubble5: UIImageView!
     @IBOutlet weak var logo: UIImageView!
     @IBOutlet weak var dot: UIImageView!
+    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var userIcon: UIImageView!
+    @IBOutlet weak var keyIcon: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +32,19 @@ class LoginViewController: UIViewController {
         
         self.logo.center.x -= self.view.bounds.width
         self.dot.center.x -= self.view.bounds.width/2
+        
+        let paddingViewForUsername = UIView(frame: CGRectMake(0, 0, 44, self.username.frame.height))
+        self.username.leftView = paddingViewForUsername
+        self.username.leftViewMode = UITextFieldViewMode.Always
+        
+        let paddingViewForPassword = UIView(frame: CGRectMake(0, 0, 44, self.password.frame.height))
+        self.password.leftView = paddingViewForPassword
+        self.password.leftViewMode = UITextFieldViewMode.Always
+
+        self.username.center.x -= self.view.bounds.width
+        self.password.center.x -= self.view.bounds.width
+        self.userIcon.center.x -= self.view.bounds.width
+        self.keyIcon.center.x -= self.view.bounds.width
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,12 +66,26 @@ class LoginViewController: UIViewController {
             self.bubble3.transform = CGAffineTransformMakeScale(1, 1)
             }, completion: nil)
         
-        UIView.animateWithDuration(0.3, delay: 0.5, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.5, options: nil, animations: {
+        UIView.animateWithDuration(0.5, delay: 0.5, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.5, options: nil, animations: {
             self.logo.center.x += self.view.bounds.width
             }, completion: nil)
         
-        UIView.animateWithDuration(4, delay: 0.5, usingSpringWithDamping: 0.1, initialSpringVelocity: 1, options: nil, animations: {
+//        UIView.animateWithDuration(0.5, delay: 0.5, options: .CurveEaseOut, animations: {
+//            self.logo.center.x += self.view.bounds.width
+//        }, completion: nil)
+//        
+        UIView.animateWithDuration(5, delay: 0.5, usingSpringWithDamping: 0.1, initialSpringVelocity: 1, options: nil, animations: {
             self.dot.center.x += self.view.bounds.width/2
+            }, completion: nil)
+        
+        UIView.animateWithDuration(0.4, delay: 0.6, options: .CurveEaseOut, animations: {
+            self.username.center.x += self.view.bounds.width
+            self.userIcon.center.x += self.view.bounds.width
+            }, completion: nil)
+        
+        UIView.animateWithDuration(0.4, delay: 0.7, options: .CurveEaseOut, animations: {
+            self.password.center.x += self.view.bounds.width
+            self.keyIcon.center.x += self.view.bounds.width
             }, completion: nil)
     }
 

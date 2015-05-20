@@ -530,6 +530,26 @@
                                 <rect key="frame" x="111" y="142" width="11" height="11"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" background="Text Field" id="yPQ-d5-KFf">
+                                <rect key="frame" x="27" y="232" width="320" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" background="Text Field" id="94q-A2-f27">
+                                <rect key="frame" x="27" y="292" width="320" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="User" id="6O7-I5-s1p">
+                                <rect key="frame" x="41" y="242" width="19" height="20"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Key" id="Vbd-oR-t0A">
+                                <rect key="frame" x="38" y="301" width="22" height="21"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -542,7 +562,11 @@
                         <outlet property="bubble4" destination="RdP-rJ-hI6" id="2dM-ur-7Ja"/>
                         <outlet property="bubble5" destination="FGA-pE-qF9" id="Y22-s3-gAW"/>
                         <outlet property="dot" destination="Df9-KT-ISb" id="pQ2-Lk-jN5"/>
+                        <outlet property="keyIcon" destination="Vbd-oR-t0A" id="7ZQ-hU-TYE"/>
                         <outlet property="logo" destination="Mbj-2X-Wzp" id="spY-43-Xg7"/>
+                        <outlet property="password" destination="94q-A2-f27" id="LqW-7P-MjK"/>
+                        <outlet property="userIcon" destination="6O7-I5-s1p" id="Ggs-am-BoU"/>
+                        <outlet property="username" destination="yPQ-d5-KFf" id="2Ji-e6-6dB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6IZ-nb-Z6V" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -559,6 +583,9 @@
         <image name="Bubble4" width="84" height="84"/>
         <image name="Bubble5" width="100" height="100"/>
         <image name="Dot" width="11" height="11"/>
+        <image name="Key" width="22" height="21"/>
+        <image name="Text Field" width="11" height="40"/>
+        <image name="User" width="19" height="20"/>
         <image name="wheel" width="894" height="894"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
