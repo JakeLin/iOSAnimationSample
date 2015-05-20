@@ -21,6 +21,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var userIcon: UIImageView!
     @IBOutlet weak var keyIcon: UIImageView!
+    @IBOutlet weak var login: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +46,8 @@ class LoginViewController: UIViewController {
         self.password.center.x -= self.view.bounds.width
         self.userIcon.center.x -= self.view.bounds.width
         self.keyIcon.center.x -= self.view.bounds.width
+        
+        self.login.center.x -= self.view.bounds.width
     }
 
     override func didReceiveMemoryWarning() {
@@ -74,7 +77,7 @@ class LoginViewController: UIViewController {
 //            self.logo.center.x += self.view.bounds.width
 //        }, completion: nil)
 //        
-        UIView.animateWithDuration(5, delay: 0.5, usingSpringWithDamping: 0.1, initialSpringVelocity: 1, options: nil, animations: {
+        UIView.animateWithDuration(5, delay: 1, usingSpringWithDamping: 0.1, initialSpringVelocity: 1, options: nil, animations: {
             self.dot.center.x += self.view.bounds.width/2
             }, completion: nil)
         
@@ -87,6 +90,11 @@ class LoginViewController: UIViewController {
             self.password.center.x += self.view.bounds.width
             self.keyIcon.center.x += self.view.bounds.width
             }, completion: nil)
+        
+        UIView.animateWithDuration(0.4, delay: 0.8, options: .CurveEaseOut, animations: {
+            self.login.center.x += self.view.bounds.width
+            }, completion: nil)
+
     }
 
     /*

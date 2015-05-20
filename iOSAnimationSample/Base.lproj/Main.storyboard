@@ -550,6 +550,21 @@
                                 <rect key="frame" x="38" y="301" width="22" height="21"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Mxe-Eq-wsu">
+                                <rect key="frame" x="27" y="372" width="320" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -563,6 +578,7 @@
                         <outlet property="bubble5" destination="FGA-pE-qF9" id="Y22-s3-gAW"/>
                         <outlet property="dot" destination="Df9-KT-ISb" id="pQ2-Lk-jN5"/>
                         <outlet property="keyIcon" destination="Vbd-oR-t0A" id="7ZQ-hU-TYE"/>
+                        <outlet property="login" destination="Mxe-Eq-wsu" id="G6g-eR-vUf"/>
                         <outlet property="logo" destination="Mbj-2X-Wzp" id="spY-43-Xg7"/>
                         <outlet property="password" destination="94q-A2-f27" id="LqW-7P-MjK"/>
                         <outlet property="userIcon" destination="6O7-I5-s1p" id="Ggs-am-BoU"/>
