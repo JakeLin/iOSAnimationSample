@@ -23,6 +23,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var keyIcon: UIImageView!
     @IBOutlet weak var login: UIButton!
     
+    // Customer UI
+    let spinner = UIActivityIndicatorView(activityIndicatorStyle: .WhiteLarge)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.bubble1.transform = CGAffineTransformMakeScale(0, 0)
@@ -48,6 +51,10 @@ class LoginViewController: UIViewController {
         self.keyIcon.center.x -= self.view.bounds.width
         
         self.login.center.x -= self.view.bounds.width
+        
+        spinner.startAnimating()
+        spinner.alpha = 0
+        self.login.addSubview(spinner)
     }
 
     override func didReceiveMemoryWarning() {
@@ -97,6 +104,17 @@ class LoginViewController: UIViewController {
 
     }
 
+    @IBAction func loginTapped(sender: AnyObject) {
+        self.login.bounds.size.width -= 80.0
+        self.spinner.center = CGPoint(x: 40.0,
+            y: self.login.frame.size.height/2)
+        self.spinner.alpha = 1
+        UIView.animateWithDuration(1.5, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 0, options: nil, animations: {
+            self.login.bounds.size.width += 80.0
+            // self.login.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.4)
+        }, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
