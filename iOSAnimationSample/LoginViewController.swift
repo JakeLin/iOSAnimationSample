@@ -25,7 +25,9 @@ class LoginViewController: UIViewController {
     
     // Customer UI
     let spinner = UIActivityIndicatorView(activityIndicatorStyle: .WhiteLarge)
-    
+    let warningMessage = UIImageView(image: UIImage(named: "Warning"))
+    var loginPosition = CGPoint.zeroPoint
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         self.bubble1.transform = CGAffineTransformMakeScale(0, 0)
@@ -55,6 +57,9 @@ class LoginViewController: UIViewController {
         spinner.startAnimating()
         spinner.alpha = 0
         self.login.addSubview(spinner)
+        
+        self.view.addSubview(self.warningMessage)
+        self.warningMessage.hidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -100,7 +105,9 @@ class LoginViewController: UIViewController {
         
         UIView.animateWithDuration(0.4, delay: 0.8, options: .CurveEaseOut, animations: {
             self.login.center.x += self.view.bounds.width
-            }, completion: nil)
+            }, completion: { _ in
+                self.loginPosition = self.login.center
+        })
 
     }
 
@@ -109,10 +116,26 @@ class LoginViewController: UIViewController {
         self.spinner.center = CGPoint(x: 40.0,
             y: self.login.frame.size.height/2)
         self.spinner.alpha = 1
+        
+        self.warningMessage.hidden = true
+        self.login.center = self.loginPosition
+        self.warningMessage.center = self.login.center
+        
         UIView.animateWithDuration(1.5, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 0, options: nil, animations: {
-            self.login.bounds.size.width += 80.0
-            // self.login.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.4)
-        }, completion: nil)
+                self.login.bounds.size.width += 80.0
+                // self.login.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.4)
+            }, completion: {finished in
+                UIView.animateWithDuration(0.5, animations: {
+                    self.login.center.y += 90
+                    self.spinner.alpha = 0
+                })
+                UIView.transitionWithView(self.warningMessage,
+                    duration: 0.5,
+                    options: .TransitionFlipFromTop,
+                    animations: {
+                        self.warningMessage.hidden = false
+                }, completion: nil)
+            })
     }
     
     /*
