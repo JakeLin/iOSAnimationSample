@@ -117,24 +117,34 @@ class LoginViewController: UIViewController {
             y: self.login.frame.size.height/2)
         self.spinner.alpha = 1
         
-        self.warningMessage.hidden = true
-        self.login.center = self.loginPosition
+        UIView.transitionWithView(self.warningMessage,
+            duration: 0.3,
+            options: .TransitionFlipFromTop,
+            animations: {
+                self.warningMessage.hidden = true
+            }, completion: nil)
+        
+        UIView.animateWithDuration(0.3, animations: {
+            self.login.center = self.loginPosition
+        })
+        
         self.warningMessage.center = self.login.center
         
         UIView.animateWithDuration(1.5, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 0, options: nil, animations: {
                 self.login.bounds.size.width += 80.0
                 // self.login.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.4)
             }, completion: {finished in
-                UIView.animateWithDuration(0.5, animations: {
+                UIView.animateWithDuration(0.3, animations: {
                     self.login.center.y += 90
                     self.spinner.alpha = 0
+                }, completion: { _ in
+                    UIView.transitionWithView(self.warningMessage,
+                        duration: 0.3,
+                        options: .TransitionFlipFromTop | .CurveEaseOut,
+                        animations: {
+                            self.warningMessage.hidden = false
+                        }, completion: nil)
                 })
-                UIView.transitionWithView(self.warningMessage,
-                    duration: 0.5,
-                    options: .TransitionFlipFromTop,
-                    animations: {
-                        self.warningMessage.hidden = false
-                }, completion: nil)
             })
     }
     
