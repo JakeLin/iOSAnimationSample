@@ -19,8 +19,6 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var dot: UIImageView!
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
-    @IBOutlet weak var userIcon: UIImageView!
-    @IBOutlet weak var keyIcon: UIImageView!
     @IBOutlet weak var login: UIButton!
     
     // Customer UI
@@ -41,16 +39,22 @@ class LoginViewController: UIViewController {
         
         let paddingViewForUsername = UIView(frame: CGRectMake(0, 0, 44, self.username.frame.height))
         self.username.leftView = paddingViewForUsername
-        self.username.leftViewMode = UITextFieldViewMode.Always
+        self.username.leftViewMode = .Always
         
         let paddingViewForPassword = UIView(frame: CGRectMake(0, 0, 44, self.password.frame.height))
         self.password.leftView = paddingViewForPassword
-        self.password.leftViewMode = UITextFieldViewMode.Always
+        self.password.leftViewMode = .Always
 
+        var userImageView = UIImageView(image: UIImage(named: "User"))
+        userImageView.frame.origin = CGPoint(x: 13, y: 10)
+        self.username.addSubview(userImageView)
+        
+        var passwordImageView = UIImageView(image: UIImage(named: "Key"))
+        passwordImageView.frame.origin = CGPoint(x: 12, y: 9)
+        self.password.addSubview(passwordImageView)
+        
         self.username.center.x -= self.view.bounds.width
         self.password.center.x -= self.view.bounds.width
-        self.userIcon.center.x -= self.view.bounds.width
-        self.keyIcon.center.x -= self.view.bounds.width
         
         self.login.center.x -= self.view.bounds.width
         
@@ -95,12 +99,10 @@ class LoginViewController: UIViewController {
         
         UIView.animateWithDuration(0.4, delay: 0.6, options: .CurveEaseOut, animations: {
             self.username.center.x += self.view.bounds.width
-            self.userIcon.center.x += self.view.bounds.width
             }, completion: nil)
         
         UIView.animateWithDuration(0.4, delay: 0.7, options: .CurveEaseOut, animations: {
             self.password.center.x += self.view.bounds.width
-            self.keyIcon.center.x += self.view.bounds.width
             }, completion: nil)
         
         UIView.animateWithDuration(0.4, delay: 0.8, options: .CurveEaseOut, animations: {
