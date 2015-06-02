@@ -56,14 +56,12 @@ class LoginViewController: UIViewController {
         self.username.center.x -= self.view.bounds.width
         self.password.center.x -= self.view.bounds.width
         
+        self.loginPosition = self.login.center
         self.login.center.x -= self.view.bounds.width
-        
-        spinner.startAnimating()
-        spinner.alpha = 0
-        self.login.addSubview(spinner)
         
         self.view.addSubview(self.warningMessage)
         self.warningMessage.hidden = true
+        self.warningMessage.center = self.loginPosition
     }
 
     override func didReceiveMemoryWarning() {
@@ -107,17 +105,14 @@ class LoginViewController: UIViewController {
         
         UIView.animateWithDuration(0.4, delay: 0.8, options: .CurveEaseOut, animations: {
             self.login.center.x += self.view.bounds.width
-            }, completion: { _ in
-                self.loginPosition = self.login.center
-        })
+            }, completion: nil)
 
     }
 
     @IBAction func loginTapped(sender: AnyObject) {
-        self.login.bounds.size.width -= 80.0
-        self.spinner.center = CGPoint(x: 40.0,
-            y: self.login.frame.size.height/2)
-        self.spinner.alpha = 1
+        self.login.addSubview(self.spinner)
+        self.spinner.frame.origin = CGPointMake(12, 12)
+        self.spinner.startAnimating()
         
         UIView.transitionWithView(self.warningMessage,
             duration: 0.3,
@@ -128,24 +123,22 @@ class LoginViewController: UIViewController {
         
         UIView.animateWithDuration(0.3, animations: {
             self.login.center = self.loginPosition
-        })
-        
-        self.warningMessage.center = self.login.center
-        
-        UIView.animateWithDuration(1.5, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 0, options: nil, animations: {
-                self.login.bounds.size.width += 80.0
-                // self.login.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.4)
-            }, completion: {finished in
-                UIView.animateWithDuration(0.3, animations: {
-                    self.login.center.y += 90
-                    self.spinner.alpha = 0
-                }, completion: { _ in
-                    UIView.transitionWithView(self.warningMessage,
-                        duration: 0.3,
-                        options: .TransitionFlipFromTop | .CurveEaseOut,
-                        animations: {
-                            self.warningMessage.hidden = false
-                        }, completion: nil)
+            }, completion: { _ in
+                self.login.center.x -= 30
+                UIView.animateWithDuration(1.5, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 0, options: nil, animations: {
+                    self.login.center.x += 30
+                    }, completion: {finished in
+                        UIView.animateWithDuration(0.3, animations: {
+                            self.login.center.y += 90
+                            self.spinner.removeFromSuperview()
+                            }, completion: { _ in
+                                UIView.transitionWithView(self.warningMessage,
+                                    duration: 0.3,
+                                    options: .TransitionFlipFromTop | .CurveEaseOut,
+                                    animations: {
+                                        self.warningMessage.hidden = false
+                                    }, completion: nil)
+                        })
                 })
             })
     }
