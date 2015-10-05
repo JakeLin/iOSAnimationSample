@@ -24,7 +24,7 @@ class LoginViewController: UIViewController {
     // Customer UI
     let spinner = UIActivityIndicatorView(activityIndicatorStyle: .WhiteLarge)
     let warningMessage = UIImageView(image: UIImage(named: "Warning"))
-    var loginPosition = CGPoint.zeroPoint
+    var loginPosition = CGPoint.zero
    
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,11 +45,11 @@ class LoginViewController: UIViewController {
         self.password.leftView = paddingViewForPassword
         self.password.leftViewMode = .Always
 
-        var userImageView = UIImageView(image: UIImage(named: "User"))
+        let userImageView = UIImageView(image: UIImage(named: "User"))
         userImageView.frame.origin = CGPoint(x: 13, y: 10)
         self.username.addSubview(userImageView)
         
-        var passwordImageView = UIImageView(image: UIImage(named: "Key"))
+        let passwordImageView = UIImageView(image: UIImage(named: "Key"))
         passwordImageView.frame.origin = CGPoint(x: 12, y: 9)
         self.password.addSubview(passwordImageView)
         
@@ -72,18 +72,18 @@ class LoginViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
 
-        UIView.animateWithDuration(0.3, delay: 0.3, usingSpringWithDamping: 0.4, initialSpringVelocity: 0, options: nil, animations: {
+        UIView.animateWithDuration(0.3, delay: 0.3, usingSpringWithDamping: 0.4, initialSpringVelocity: 0, options: [], animations: {
             self.bubble1.transform = CGAffineTransformMakeScale(1, 1)
             self.bubble4.transform = CGAffineTransformMakeScale(1, 1)
             self.bubble5.transform = CGAffineTransformMakeScale(1, 1)
         }, completion: nil)
         
-        UIView.animateWithDuration(0.3, delay: 0.4, usingSpringWithDamping: 0.4, initialSpringVelocity: 0, options: nil, animations: {
+        UIView.animateWithDuration(0.3, delay: 0.4, usingSpringWithDamping: 0.4, initialSpringVelocity: 0, options: [], animations: {
             self.bubble2.transform = CGAffineTransformMakeScale(1, 1)
             self.bubble3.transform = CGAffineTransformMakeScale(1, 1)
             }, completion: nil)
         
-        UIView.animateWithDuration(0.5, delay: 0.5, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.5, options: nil, animations: {
+        UIView.animateWithDuration(0.5, delay: 0.5, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.5, options: [], animations: {
             self.logo.center.x += self.view.bounds.width
             }, completion: nil)
         
@@ -91,7 +91,7 @@ class LoginViewController: UIViewController {
 //            self.logo.center.x += self.view.bounds.width
 //        }, completion: nil)
 //        
-        UIView.animateWithDuration(5, delay: 1, usingSpringWithDamping: 0.1, initialSpringVelocity: 1, options: nil, animations: {
+        UIView.animateWithDuration(5, delay: 1, usingSpringWithDamping: 0.1, initialSpringVelocity: 1, options: [], animations: {
             self.dot.center.x += self.view.bounds.width/2
             }, completion: nil)
         
@@ -125,7 +125,7 @@ class LoginViewController: UIViewController {
             self.login.center = self.loginPosition
             }, completion: { _ in
                 self.login.center.x -= 30
-                UIView.animateWithDuration(1.5, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 0, options: nil, animations: {
+                UIView.animateWithDuration(1.5, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 0, options: [], animations: {
                     self.login.center.x += 30
                     }, completion: {finished in
                         UIView.animateWithDuration(0.3, animations: {
@@ -134,7 +134,7 @@ class LoginViewController: UIViewController {
                             }, completion: { _ in
                                 UIView.transitionWithView(self.warningMessage,
                                     duration: 0.3,
-                                    options: .TransitionFlipFromTop | .CurveEaseOut,
+                                    options: [.TransitionFlipFromTop, .CurveEaseOut],
                                     animations: {
                                         self.warningMessage.hidden = false
                                     }, completion: nil)

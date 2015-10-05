@@ -43,7 +43,7 @@ class KeyframeViewController: UIViewController {
 //        })
         
         // Same as above using keyframe animation
-        UIView.animateKeyframesWithDuration(2, delay: 0, options: nil, animations: {
+        UIView.animateKeyframesWithDuration(2, delay: 0, options: [], animations: {
             UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 0.25, animations: {
                 self.blueSquare.center.x = self.view.bounds.width - self.blueSquare.center.x
             })
