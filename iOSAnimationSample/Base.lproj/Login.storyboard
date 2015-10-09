@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Auto Layout Login View Controller-->
@@ -14,11 +15,11 @@
                         <viewControllerLayoutGuide type="bottom" id="8Ye-D9-CQ8"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="h3m-J8-tnE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Uog-uc-Ptx">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Uog-uc-Ptx">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <animations/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Bubble2" translatesAutoresizingMaskIntoConstraints="NO" id="GuJ-CT-XYN">
@@ -41,30 +42,36 @@
                                 <rect key="frame" x="16" y="209" width="130" height="130"/>
                                 <animations/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="AnimateHub" translatesAutoresizingMaskIntoConstraints="NO" id="bFz-Xn-ki9">
-                                <rect key="frame" x="50" y="156" width="274" height="36"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="AnimateHub" translatesAutoresizingMaskIntoConstraints="NO" id="bFz-Xn-ki9">
+                                <rect key="frame" x="70" y="156" width="274" height="36"/>
                                 <animations/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Dot" translatesAutoresizingMaskIntoConstraints="NO" id="Vbs-jG-C5C">
-                                <rect key="frame" x="111" y="142" width="11" height="11"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Dot" translatesAutoresizingMaskIntoConstraints="NO" id="Vbs-jG-C5C">
+                                <rect key="frame" x="131" y="142" width="11" height="11"/>
                                 <animations/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" background="Text Field" translatesAutoresizingMaskIntoConstraints="NO" id="xBZ-Ct-Xo5">
-                                <rect key="frame" x="27" y="232" width="320" height="40"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" background="Text Field" translatesAutoresizingMaskIntoConstraints="NO" id="xBZ-Ct-Xo5">
+                                <rect key="frame" x="20" y="232" width="374" height="40"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="R6a-c8-sqw"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" background="Text Field" translatesAutoresizingMaskIntoConstraints="NO" id="Pjd-Mb-61t">
-                                <rect key="frame" x="27" y="292" width="320" height="40"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" background="Text Field" translatesAutoresizingMaskIntoConstraints="NO" id="Pjd-Mb-61t">
+                                <rect key="frame" x="20" y="292" width="374" height="40"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vuv-7G-YRb">
-                                <rect key="frame" x="27" y="372" width="320" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vuv-7G-YRb">
+                                <rect key="frame" x="20" y="372" width="374" height="60"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="vc4-4g-Ucu"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Log In" backgroundImage="Button Background">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -79,10 +86,31 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vbs-jG-C5C" firstAttribute="bottom" secondItem="bFz-Xn-ki9" secondAttribute="top" constant="-3" id="57K-zG-kwG"/>
+                            <constraint firstItem="xBZ-Ct-Xo5" firstAttribute="leading" secondItem="h3m-J8-tnE" secondAttribute="leadingMargin" id="75o-nZ-TS1"/>
+                            <constraint firstItem="Pjd-Mb-61t" firstAttribute="width" secondItem="xBZ-Ct-Xo5" secondAttribute="width" id="7cJ-Zg-oQ6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xBZ-Ct-Xo5" secondAttribute="trailing" id="9wb-5F-4Px"/>
+                            <constraint firstItem="Vuv-7G-YRb" firstAttribute="width" secondItem="Pjd-Mb-61t" secondAttribute="width" id="GmC-2g-7Ok"/>
+                            <constraint firstItem="xBZ-Ct-Xo5" firstAttribute="top" secondItem="bFz-Xn-ki9" secondAttribute="bottom" constant="40" id="HLJ-D7-Wj1"/>
+                            <constraint firstItem="Vuv-7G-YRb" firstAttribute="leading" secondItem="Pjd-Mb-61t" secondAttribute="leading" id="Ha5-uE-cU2"/>
+                            <constraint firstItem="Uog-uc-Ptx" firstAttribute="width" secondItem="h3m-J8-tnE" secondAttribute="width" id="Jas-60-PCz"/>
+                            <constraint firstItem="bFz-Xn-ki9" firstAttribute="top" secondItem="ZGT-Di-C92" secondAttribute="bottom" constant="156" id="Jg9-Qa-G8b"/>
+                            <constraint firstItem="bFz-Xn-ki9" firstAttribute="centerX" secondItem="h3m-J8-tnE" secondAttribute="centerX" id="OvQ-wU-aZk"/>
+                            <constraint firstItem="Pjd-Mb-61t" firstAttribute="leading" secondItem="xBZ-Ct-Xo5" secondAttribute="leading" id="SHN-Uz-qRa"/>
+                            <constraint firstItem="Vuv-7G-YRb" firstAttribute="top" secondItem="Pjd-Mb-61t" secondAttribute="bottom" constant="40" id="T00-WU-fpS"/>
+                            <constraint firstItem="Pjd-Mb-61t" firstAttribute="height" secondItem="xBZ-Ct-Xo5" secondAttribute="height" id="jtj-yi-cjG"/>
+                            <constraint firstItem="Uog-uc-Ptx" firstAttribute="centerX" secondItem="h3m-J8-tnE" secondAttribute="centerX" id="nOc-T3-5Oc"/>
+                            <constraint firstItem="Vbs-jG-C5C" firstAttribute="leading" secondItem="bFz-Xn-ki9" secondAttribute="leading" constant="61" id="pya-w7-ygS"/>
+                            <constraint firstItem="Uog-uc-Ptx" firstAttribute="centerY" secondItem="h3m-J8-tnE" secondAttribute="centerY" id="qRo-9y-zHx"/>
+                            <constraint firstItem="Uog-uc-Ptx" firstAttribute="height" secondItem="h3m-J8-tnE" secondAttribute="height" id="s8Y-Wk-Vof"/>
+                            <constraint firstItem="Pjd-Mb-61t" firstAttribute="top" secondItem="xBZ-Ct-Xo5" secondAttribute="bottom" constant="20" id="yLF-Ff-YQp"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NKR-fd-7uH"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jxQ-Ot-MAN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
