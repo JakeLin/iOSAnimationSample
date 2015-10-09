@@ -14,6 +14,8 @@
 		AE337B3E1AF26525005F4AE1 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE337B3D1AF26525005F4AE1 /* ColorViewController.swift */; };
 		AE337B401AF2E1F0005F4AE1 /* RotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE337B3F1AF2E1F0005F4AE1 /* RotationViewController.swift */; };
 		AE6660241B0F1F5800C0B75C /* KeyframeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6660231B0F1F5800C0B75C /* KeyframeViewController.swift */; };
+		AE726BC31BC7EF0400D8060A /* AutoLayoutLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE726BC21BC7EF0400D8060A /* AutoLayoutLoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		AE726BC61BC7F02E00D8060A /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE726BC41BC7F02E00D8060A /* Login.storyboard */; settings = {ASSET_TAGS = (); }; };
 		AE80A0C61B08C9E70013F169 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE80A0C51B08C9E70013F169 /* LoginViewController.swift */; };
 		AE8A3A591AF2598200815F4B /* OpacityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8A3A581AF2598200815F4B /* OpacityViewController.swift */; };
 		AECE40101AEF7274005A5415 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECE400F1AEF7274005A5415 /* AppDelegate.swift */; };
@@ -43,6 +45,8 @@
 		AE337B3D1AF26525005F4AE1 /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 		AE337B3F1AF2E1F0005F4AE1 /* RotationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotationViewController.swift; sourceTree = "<group>"; };
 		AE6660231B0F1F5800C0B75C /* KeyframeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyframeViewController.swift; sourceTree = "<group>"; };
+		AE726BC21BC7EF0400D8060A /* AutoLayoutLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutLoginViewController.swift; sourceTree = "<group>"; };
+		AE726BC51BC7F02E00D8060A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		AE80A0C51B08C9E70013F169 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AE8A3A581AF2598200815F4B /* OpacityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpacityViewController.swift; sourceTree = "<group>"; };
 		AECE400A1AEF7274005A5415 /* iOSAnimationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSAnimationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,7 +113,9 @@
 				AE17FD411AF8A84B0086BC39 /* SpringViewController.swift */,
 				AE80A0C51B08C9E70013F169 /* LoginViewController.swift */,
 				AE6660231B0F1F5800C0B75C /* KeyframeViewController.swift */,
+				AE726BC21BC7EF0400D8060A /* AutoLayoutLoginViewController.swift */,
 				AECE40131AEF7274005A5415 /* Main.storyboard */,
+				AE726BC41BC7F02E00D8060A /* Login.storyboard */,
 				AECE40161AEF7274005A5415 /* Images.xcassets */,
 				AECE40181AEF7274005A5415 /* LaunchScreen.xib */,
 				AECE400D1AEF7274005A5415 /* Supporting Files */,
@@ -224,6 +230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE726BC61BC7F02E00D8060A /* Login.storyboard in Resources */,
 				AECE40151AEF7274005A5415 /* Main.storyboard in Resources */,
 				AECE401A1AEF7274005A5415 /* LaunchScreen.xib in Resources */,
 				AECE40171AEF7274005A5415 /* Images.xcassets in Resources */,
@@ -248,6 +255,7 @@
 				AE337B3C1AF260C0005F4AE1 /* ScaleViewController.swift in Sources */,
 				AE17FD401AF824990086BC39 /* EasingViewController.swift in Sources */,
 				AE17FD421AF8A84B0086BC39 /* SpringViewController.swift in Sources */,
+				AE726BC31BC7EF0400D8060A /* AutoLayoutLoginViewController.swift in Sources */,
 				AECE40121AEF7274005A5415 /* ViewController.swift in Sources */,
 				AE8A3A591AF2598200815F4B /* OpacityViewController.swift in Sources */,
 				AE6660241B0F1F5800C0B75C /* KeyframeViewController.swift in Sources */,
@@ -278,6 +286,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		AE726BC41BC7F02E00D8060A /* Login.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE726BC51BC7F02E00D8060A /* Base */,
+			);
+			name = Login.storyboard;
+			sourceTree = "<group>";
+		};
 		AECE40131AEF7274005A5415 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

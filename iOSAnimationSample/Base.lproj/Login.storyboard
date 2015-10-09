@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="uaq-fP-OAs">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Auto Layout Login View Controller-->
+        <scene sceneID="1SJ-8a-8by">
+            <objects>
+                <viewController id="uaq-fP-OAs" customClass="AutoLayoutLoginViewController" customModule="iOSAnimationSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZGT-Di-C92"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Ye-D9-CQ8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h3m-J8-tnE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Uog-uc-Ptx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <animations/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Bubble2" translatesAutoresizingMaskIntoConstraints="NO" id="GuJ-CT-XYN">
+                                <rect key="frame" x="235" y="112" width="124" height="124"/>
+                                <animations/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Bubble3" translatesAutoresizingMaskIntoConstraints="NO" id="FKt-dU-gDR">
+                                <rect key="frame" x="169" y="256" width="120" height="120"/>
+                                <animations/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Bubble4" translatesAutoresizingMaskIntoConstraints="NO" id="2E6-NS-w5x">
+                                <rect key="frame" x="27" y="453" width="84" height="84"/>
+                                <animations/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Bubble5" translatesAutoresizingMaskIntoConstraints="NO" id="RF6-ZL-mkD">
+                                <rect key="frame" x="241" y="400" width="100" height="100"/>
+                                <animations/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Bubble1" translatesAutoresizingMaskIntoConstraints="NO" id="fNu-my-uhA">
+                                <rect key="frame" x="16" y="209" width="130" height="130"/>
+                                <animations/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="AnimateHub" translatesAutoresizingMaskIntoConstraints="NO" id="bFz-Xn-ki9">
+                                <rect key="frame" x="50" y="156" width="274" height="36"/>
+                                <animations/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Dot" translatesAutoresizingMaskIntoConstraints="NO" id="Vbs-jG-C5C">
+                                <rect key="frame" x="111" y="142" width="11" height="11"/>
+                                <animations/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" background="Text Field" translatesAutoresizingMaskIntoConstraints="NO" id="xBZ-Ct-Xo5">
+                                <rect key="frame" x="27" y="232" width="320" height="40"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" background="Text Field" translatesAutoresizingMaskIntoConstraints="NO" id="Pjd-Mb-61t">
+                                <rect key="frame" x="27" y="292" width="320" height="40"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vuv-7G-YRb">
+                                <rect key="frame" x="27" y="372" width="320" height="60"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Log In" backgroundImage="Button Background">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NKR-fd-7uH"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jxQ-Ot-MAN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079.5" y="7039.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AnimateHub" width="274" height="36"/>
+        <image name="Background" width="375" height="667"/>
+        <image name="Bubble1" width="130" height="130"/>
+        <image name="Bubble2" width="124" height="124"/>
+        <image name="Bubble3" width="120" height="120"/>
+        <image name="Bubble4" width="84" height="84"/>
+        <image name="Bubble5" width="100" height="100"/>
+        <image name="Button Background" width="321" height="61"/>
+        <image name="Dot" width="11" height="11"/>
+        <image name="Text Field" width="11" height="40"/>
+    </resources>
+</document>
