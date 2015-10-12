@@ -83,6 +83,14 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fr6-wP-a9f">
+                                <rect key="frame" x="154" y="686" width="107" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Start Animation"/>
+                                <connections>
+                                    <action selector="startAnimation:" destination="uaq-fP-OAs" eventType="touchUpInside" id="9pc-x8-qUo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -111,6 +119,16 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="logoContraint" destination="OvQ-wU-aZk" id="Tu7-OT-AX5"/>
+                        <outlet property="passwordTextField" destination="Pjd-Mb-61t" id="cpW-H7-ngB"/>
+                        <outlet property="usernameTextField" destination="xBZ-Ct-Xo5" id="a7G-CI-DGY"/>
+                        <outletCollection property="bubbleImageViewGroup1" destination="fNu-my-uhA" collectionClass="NSMutableArray" id="7eD-U8-yb5"/>
+                        <outletCollection property="bubbleImageViewGroup1" destination="2E6-NS-w5x" collectionClass="NSMutableArray" id="BAF-Ko-QZI"/>
+                        <outletCollection property="bubbleImageViewGroup1" destination="RF6-ZL-mkD" collectionClass="NSMutableArray" id="9z4-oW-tWe"/>
+                        <outletCollection property="bubbleImageViewGroup2" destination="GuJ-CT-XYN" collectionClass="NSMutableArray" id="LWE-A8-g2T"/>
+                        <outletCollection property="bubbleImageViewGroup2" destination="FKt-dU-gDR" collectionClass="NSMutableArray" id="sjh-k9-1Rx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jxQ-Ot-MAN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
