@@ -18,15 +18,16 @@ class AutoLayoutLoginViewController: UIViewController {
   @IBOutlet var passwordTextField: UITextField!
   
   @IBOutlet var logoContraint: NSLayoutConstraint!
+  @IBOutlet var usernameConstraint: NSLayoutConstraint!
   
   
-  var logoConstraintEndConstant : CGFloat = 0
+  var centerConstraintEndConstant : CGFloat = 0
 
   override func viewDidLoad() {
     super.viewDidLoad()
     
     // Save all constraints end constants to animate.
-    logoConstraintEndConstant = logoContraint.constant
+    centerConstraintEndConstant = logoContraint.constant
     
     // Setup all bubbles start transform
     for bubble in bubbleImageViewGroup1 {
@@ -56,7 +57,9 @@ class AutoLayoutLoginViewController: UIViewController {
     
     
     // Set all constraints to start constants
-    logoContraint.constant = logoConstraintEndConstant - view.frame.width
+    logoContraint.constant = centerConstraintEndConstant - view.frame.width
+    usernameConstraint.constant = centerConstraintEndConstant - view.frame.width
+    
   }
   
   
@@ -82,9 +85,14 @@ class AutoLayoutLoginViewController: UIViewController {
       }
     }, completion: nil)
     
-    logoContraint.constant = logoConstraintEndConstant
+    logoContraint.constant = centerConstraintEndConstant
     UIView.animateWithDuration(0.3, delay: 0.2, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.5, options: [], animations: {
         self.view.layoutIfNeeded()
     }, completion: nil)
+    
+    usernameConstraint.constant = centerConstraintEndConstant
+    UIView.animateWithDuration(0.3, delay: 0.3, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.5, options: [], animations: {
+      self.view.layoutIfNeeded()
+      }, completion: nil)
   }
 }
