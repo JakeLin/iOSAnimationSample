@@ -28,7 +28,7 @@ class AutoLayoutLoginViewController: UIViewController {
     // Save all constraints end constants to animate.
     logoConstraintEndConstant = logoContraint.constant
     
-    // Set all bubbles start transform
+    // Setup all bubbles start transform
     for bubble in bubbleImageViewGroup1 {
       bubble.transform = CGAffineTransformMakeScale(0, 0)
     }
@@ -36,6 +36,24 @@ class AutoLayoutLoginViewController: UIViewController {
     for bubble in bubbleImageViewGroup2 {
       bubble.transform = CGAffineTransformMakeScale(0, 0)
     }
+    
+    // Setup username and password textfields
+    let paddingViewForUsername = UIView(frame: CGRectMake(0, 0, 44, usernameTextField.frame.height))
+    usernameTextField.leftView = paddingViewForUsername
+    usernameTextField.leftViewMode = .Always
+    
+    let userImageView = UIImageView(image: UIImage(named: "User"))
+    userImageView.frame.origin = CGPoint(x: 13, y: 10)
+    usernameTextField.addSubview(userImageView)
+    
+    let paddingViewForPassword = UIView(frame: CGRectMake(0, 0, 44, passwordTextField.frame.height))
+    passwordTextField.leftView = paddingViewForPassword
+    passwordTextField.leftViewMode = .Always
+    
+    let passwordImageView = UIImageView(image: UIImage(named: "Key"))
+    passwordImageView.frame.origin = CGPoint(x: 12, y: 9)
+    passwordTextField.addSubview(passwordImageView)
+    
     
     // Set all constraints to start constants
     logoContraint.constant = logoConstraintEndConstant - view.frame.width
