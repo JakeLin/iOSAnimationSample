@@ -19,6 +19,7 @@ class AutoLayoutLoginViewController: UIViewController {
   
   @IBOutlet var logoContraint: NSLayoutConstraint!
   @IBOutlet var usernameConstraint: NSLayoutConstraint!
+  @IBOutlet var passwordConstraint: NSLayoutConstraint!
   
   
   var centerConstraintEndConstant : CGFloat = 0
@@ -59,7 +60,7 @@ class AutoLayoutLoginViewController: UIViewController {
     // Set all constraints to start constants
     logoContraint.constant = centerConstraintEndConstant - view.frame.width
     usernameConstraint.constant = centerConstraintEndConstant - view.frame.width
-    
+    passwordConstraint.constant = centerConstraintEndConstant - view.frame.width
   }
   
   
@@ -93,6 +94,11 @@ class AutoLayoutLoginViewController: UIViewController {
     usernameConstraint.constant = centerConstraintEndConstant
     UIView.animateWithDuration(0.3, delay: 0.3, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.5, options: [], animations: {
       self.view.layoutIfNeeded()
-      }, completion: nil)
+    }, completion: nil)
+    
+    passwordConstraint.constant = centerConstraintEndConstant
+    UIView.animateWithDuration(0.3, delay: 0.4, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.5, options: [], animations: {
+      self.view.layoutIfNeeded()
+    }, completion: nil)
   }
 }

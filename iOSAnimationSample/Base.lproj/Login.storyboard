@@ -58,7 +58,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" background="Text Field" translatesAutoresizingMaskIntoConstraints="NO" id="Pjd-Mb-61t">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" background="Text Field" translatesAutoresizingMaskIntoConstraints="NO" id="Pjd-Mb-61t">
                                 <rect key="frame" x="20" y="292" width="374" height="40"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -95,20 +95,19 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Vbs-jG-C5C" firstAttribute="bottom" secondItem="bFz-Xn-ki9" secondAttribute="top" constant="-3" id="57K-zG-kwG"/>
-                            <constraint firstItem="Pjd-Mb-61t" firstAttribute="width" secondItem="xBZ-Ct-Xo5" secondAttribute="width" id="7cJ-Zg-oQ6"/>
                             <constraint firstItem="xBZ-Ct-Xo5" firstAttribute="centerX" secondItem="h3m-J8-tnE" secondAttribute="centerX" id="Bof-vT-irb"/>
-                            <constraint firstItem="Vuv-7G-YRb" firstAttribute="width" secondItem="Pjd-Mb-61t" secondAttribute="width" id="GmC-2g-7Ok"/>
                             <constraint firstItem="xBZ-Ct-Xo5" firstAttribute="top" secondItem="bFz-Xn-ki9" secondAttribute="bottom" constant="40" id="HLJ-D7-Wj1"/>
-                            <constraint firstItem="Vuv-7G-YRb" firstAttribute="leading" secondItem="Pjd-Mb-61t" secondAttribute="leading" id="Ha5-uE-cU2"/>
                             <constraint firstItem="Uog-uc-Ptx" firstAttribute="width" secondItem="h3m-J8-tnE" secondAttribute="width" id="Jas-60-PCz"/>
                             <constraint firstItem="bFz-Xn-ki9" firstAttribute="top" secondItem="ZGT-Di-C92" secondAttribute="bottom" constant="156" id="Jg9-Qa-G8b"/>
                             <constraint firstItem="bFz-Xn-ki9" firstAttribute="centerX" secondItem="h3m-J8-tnE" secondAttribute="centerX" id="OvQ-wU-aZk"/>
+                            <constraint firstItem="Pjd-Mb-61t" firstAttribute="centerX" secondItem="h3m-J8-tnE" secondAttribute="centerX" id="PIB-k0-2Xi"/>
                             <constraint firstItem="Vuv-7G-YRb" firstAttribute="top" secondItem="Pjd-Mb-61t" secondAttribute="bottom" constant="40" id="T00-WU-fpS"/>
                             <constraint firstItem="xBZ-Ct-Xo5" firstAttribute="width" secondItem="h3m-J8-tnE" secondAttribute="width" constant="-40" id="Xzb-FM-yQu"/>
                             <constraint firstItem="Pjd-Mb-61t" firstAttribute="height" secondItem="xBZ-Ct-Xo5" secondAttribute="height" id="jtj-yi-cjG"/>
                             <constraint firstItem="Uog-uc-Ptx" firstAttribute="centerX" secondItem="h3m-J8-tnE" secondAttribute="centerX" id="nOc-T3-5Oc"/>
                             <constraint firstItem="Vbs-jG-C5C" firstAttribute="leading" secondItem="bFz-Xn-ki9" secondAttribute="leading" constant="61" id="pya-w7-ygS"/>
                             <constraint firstItem="Uog-uc-Ptx" firstAttribute="centerY" secondItem="h3m-J8-tnE" secondAttribute="centerY" id="qRo-9y-zHx"/>
+                            <constraint firstItem="Pjd-Mb-61t" firstAttribute="width" secondItem="xBZ-Ct-Xo5" secondAttribute="width" id="rod-dQ-oId"/>
                             <constraint firstItem="Uog-uc-Ptx" firstAttribute="height" secondItem="h3m-J8-tnE" secondAttribute="height" id="s8Y-Wk-Vof"/>
                             <constraint firstItem="Pjd-Mb-61t" firstAttribute="top" secondItem="xBZ-Ct-Xo5" secondAttribute="bottom" constant="20" id="yLF-Ff-YQp"/>
                         </constraints>
@@ -119,6 +118,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="logoContraint" destination="OvQ-wU-aZk" id="Tu7-OT-AX5"/>
+                        <outlet property="passwordConstraint" destination="PIB-k0-2Xi" id="66t-e8-EzU"/>
                         <outlet property="passwordTextField" destination="Pjd-Mb-61t" id="cpW-H7-ngB"/>
                         <outlet property="usernameConstraint" destination="Bof-vT-irb" id="lCh-fU-pgd"/>
                         <outlet property="usernameTextField" destination="xBZ-Ct-Xo5" id="a7G-CI-DGY"/>
