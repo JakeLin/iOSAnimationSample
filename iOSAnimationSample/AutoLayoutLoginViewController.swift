@@ -22,6 +22,7 @@ class AutoLayoutLoginViewController: UIViewController {
   @IBOutlet var usernameConstraint: NSLayoutConstraint!
   @IBOutlet var passwordConstraint: NSLayoutConstraint!
   @IBOutlet var loginButtonConstraint: NSLayoutConstraint!
+  @IBOutlet var loginButtonTopMarginConstraint: NSLayoutConstraint!
   
   // Customer UI
   let spinner = UIActivityIndicatorView(activityIndicatorStyle: .WhiteLarge)
@@ -80,7 +81,10 @@ class AutoLayoutLoginViewController: UIViewController {
     spinner.frame.origin = CGPointMake(12, 12)
     spinner.startAnimating()
     
-    
+    loginButtonTopMarginConstraint.constant = 120
+    UIView.animateWithDuration(0.3, delay: 0.2, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.5, options: [], animations: {
+      self.view.layoutIfNeeded()
+      }, completion: nil)
   }
   
   // MARK: Private methods

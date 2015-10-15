@@ -61,7 +61,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vuv-7G-YRb">
-                                <rect key="frame" x="20" y="416" width="374" height="60"/>
+                                <rect key="frame" x="20" y="326" width="374" height="60"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -137,12 +137,12 @@
                             <constraint firstItem="Pjd-Mb-61t" firstAttribute="height" secondItem="xBZ-Ct-Xo5" secondAttribute="height" id="jtj-yi-cjG"/>
                             <constraint firstItem="Vuv-7G-YRb" firstAttribute="width" secondItem="Pjd-Mb-61t" secondAttribute="width" id="mON-zX-FSW"/>
                             <constraint firstItem="Uog-uc-Ptx" firstAttribute="centerX" secondItem="h3m-J8-tnE" secondAttribute="centerX" id="nOc-T3-5Oc"/>
+                            <constraint firstItem="Vuv-7G-YRb" firstAttribute="top" secondItem="Pjd-Mb-61t" secondAttribute="bottom" constant="30" id="nSC-jH-mIF"/>
                             <constraint firstItem="Vbs-jG-C5C" firstAttribute="leading" secondItem="bFz-Xn-ki9" secondAttribute="leading" constant="61" id="pya-w7-ygS"/>
                             <constraint firstItem="Uog-uc-Ptx" firstAttribute="centerY" secondItem="h3m-J8-tnE" secondAttribute="centerY" id="qRo-9y-zHx"/>
                             <constraint firstItem="Pjd-Mb-61t" firstAttribute="width" secondItem="xBZ-Ct-Xo5" secondAttribute="width" id="rod-dQ-oId"/>
                             <constraint firstItem="Xli-lz-2eE" firstAttribute="height" secondItem="Vuv-7G-YRb" secondAttribute="height" id="rtG-Hs-Wp8"/>
                             <constraint firstItem="Uog-uc-Ptx" firstAttribute="height" secondItem="h3m-J8-tnE" secondAttribute="height" id="s8Y-Wk-Vof"/>
-                            <constraint firstItem="Vuv-7G-YRb" firstAttribute="top" secondItem="Xli-lz-2eE" secondAttribute="bottom" constant="30" id="udA-pm-IaB"/>
                             <constraint firstItem="Pjd-Mb-61t" firstAttribute="top" secondItem="xBZ-Ct-Xo5" secondAttribute="bottom" constant="20" id="yLF-Ff-YQp"/>
                         </constraints>
                     </view>
@@ -153,6 +153,7 @@
                     <connections>
                         <outlet property="loginButton" destination="Vuv-7G-YRb" id="v9x-J7-GH4"/>
                         <outlet property="loginButtonConstraint" destination="LlX-6x-cnz" id="Ma5-1G-0d8"/>
+                        <outlet property="loginButtonTopMarginConstraint" destination="nSC-jH-mIF" id="yuL-Za-c6v"/>
                         <outlet property="logoContraint" destination="OvQ-wU-aZk" id="Tu7-OT-AX5"/>
                         <outlet property="passwordConstraint" destination="PIB-k0-2Xi" id="66t-e8-EzU"/>
                         <outlet property="passwordTextField" destination="Pjd-Mb-61t" id="cpW-H7-ngB"/>
