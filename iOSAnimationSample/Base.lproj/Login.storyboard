@@ -21,36 +21,32 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <animations/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Bubble2" translatesAutoresizingMaskIntoConstraints="NO" id="GuJ-CT-XYN">
-                                <rect key="frame" x="235" y="112" width="124" height="124"/>
-                                <animations/>
-                            </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Bubble3" translatesAutoresizingMaskIntoConstraints="NO" id="FKt-dU-gDR">
-                                <rect key="frame" x="169" y="256" width="120" height="120"/>
+                                <rect key="frame" x="102" y="336" width="120" height="120"/>
                                 <animations/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Bubble4" translatesAutoresizingMaskIntoConstraints="NO" id="2E6-NS-w5x">
-                                <rect key="frame" x="27" y="453" width="84" height="84"/>
+                                <rect key="frame" x="260" y="262" width="84" height="84"/>
                                 <animations/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Bubble5" translatesAutoresizingMaskIntoConstraints="NO" id="RF6-ZL-mkD">
-                                <rect key="frame" x="241" y="400" width="100" height="100"/>
+                                <rect key="frame" x="42" y="210" width="100" height="100"/>
                                 <animations/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Bubble1" translatesAutoresizingMaskIntoConstraints="NO" id="fNu-my-uhA">
-                                <rect key="frame" x="16" y="209" width="130" height="130"/>
+                                <rect key="frame" x="216" y="73" width="130" height="130"/>
                                 <animations/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="AnimateHub" translatesAutoresizingMaskIntoConstraints="NO" id="bFz-Xn-ki9">
-                                <rect key="frame" x="70" y="156" width="274" height="36"/>
+                                <rect key="frame" x="70" y="120" width="274" height="36"/>
                                 <animations/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Dot" translatesAutoresizingMaskIntoConstraints="NO" id="Vbs-jG-C5C">
-                                <rect key="frame" x="131" y="142" width="11" height="11"/>
+                                <rect key="frame" x="131" y="106" width="11" height="11"/>
                                 <animations/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" background="Text Field" translatesAutoresizingMaskIntoConstraints="NO" id="xBZ-Ct-Xo5">
-                                <rect key="frame" x="20" y="232" width="374" height="40"/>
+                                <rect key="frame" x="20" y="196" width="374" height="40"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="R6a-c8-sqw"/>
@@ -59,13 +55,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" background="Text Field" translatesAutoresizingMaskIntoConstraints="NO" id="Pjd-Mb-61t">
-                                <rect key="frame" x="20" y="292" width="374" height="40"/>
+                                <rect key="frame" x="20" y="256" width="374" height="40"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vuv-7G-YRb">
-                                <rect key="frame" x="20" y="372" width="374" height="60"/>
+                                <rect key="frame" x="20" y="416" width="374" height="60"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -81,36 +77,72 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginDidTap:" destination="uaq-fP-OAs" eventType="touchUpInside" id="UDn-gy-uOP"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fr6-wP-a9f">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fr6-wP-a9f">
                                 <rect key="frame" x="154" y="686" width="107" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Start Animation"/>
                                 <connections>
-                                    <action selector="startAnimation:" destination="uaq-fP-OAs" eventType="touchUpInside" id="9pc-x8-qUo"/>
+                                    <action selector="startAnimationDidTap:" destination="uaq-fP-OAs" eventType="touchUpInside" id="oDM-Dg-GiF"/>
                                 </connections>
                             </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xli-lz-2eE" userLabel="Error Message View">
+                                <rect key="frame" x="20" y="326" width="374" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid username or password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fy-Wj-Jzt">
+                                        <rect key="frame" x="73.5" y="19.5" width="227" height="20.5"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="5fy-Wj-Jzt" firstAttribute="centerY" secondItem="Xli-lz-2eE" secondAttribute="centerY" id="BrO-y3-WNj"/>
+                                    <constraint firstItem="5fy-Wj-Jzt" firstAttribute="centerX" secondItem="Xli-lz-2eE" secondAttribute="centerX" id="dSP-SS-qeg"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Bubble2" translatesAutoresizingMaskIntoConstraints="NO" id="GuJ-CT-XYN">
+                                <rect key="frame" x="84" y="42" width="124" height="124"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Xli-lz-2eE" firstAttribute="width" secondItem="Vuv-7G-YRb" secondAttribute="width" id="0aL-jQ-1MV"/>
+                            <constraint firstItem="Fr6-wP-a9f" firstAttribute="centerX" secondItem="h3m-J8-tnE" secondAttribute="centerX" id="461-Pl-WqC"/>
+                            <constraint firstItem="Xli-lz-2eE" firstAttribute="top" secondItem="Pjd-Mb-61t" secondAttribute="bottom" constant="30" id="4hI-tV-PLs"/>
                             <constraint firstItem="Vbs-jG-C5C" firstAttribute="bottom" secondItem="bFz-Xn-ki9" secondAttribute="top" constant="-3" id="57K-zG-kwG"/>
                             <constraint firstItem="xBZ-Ct-Xo5" firstAttribute="centerX" secondItem="h3m-J8-tnE" secondAttribute="centerX" id="Bof-vT-irb"/>
                             <constraint firstItem="xBZ-Ct-Xo5" firstAttribute="top" secondItem="bFz-Xn-ki9" secondAttribute="bottom" constant="40" id="HLJ-D7-Wj1"/>
                             <constraint firstItem="Uog-uc-Ptx" firstAttribute="width" secondItem="h3m-J8-tnE" secondAttribute="width" id="Jas-60-PCz"/>
-                            <constraint firstItem="bFz-Xn-ki9" firstAttribute="top" secondItem="ZGT-Di-C92" secondAttribute="bottom" constant="156" id="Jg9-Qa-G8b"/>
+                            <constraint firstItem="bFz-Xn-ki9" firstAttribute="top" secondItem="ZGT-Di-C92" secondAttribute="bottom" constant="120" id="Jg9-Qa-G8b"/>
+                            <constraint firstItem="8Ye-D9-CQ8" firstAttribute="top" secondItem="Fr6-wP-a9f" secondAttribute="bottom" constant="20" id="KRm-ld-Grv"/>
                             <constraint firstItem="Vuv-7G-YRb" firstAttribute="centerX" secondItem="h3m-J8-tnE" secondAttribute="centerX" id="LlX-6x-cnz"/>
                             <constraint firstItem="bFz-Xn-ki9" firstAttribute="centerX" secondItem="h3m-J8-tnE" secondAttribute="centerX" id="OvQ-wU-aZk"/>
                             <constraint firstItem="Pjd-Mb-61t" firstAttribute="centerX" secondItem="h3m-J8-tnE" secondAttribute="centerX" id="PIB-k0-2Xi"/>
-                            <constraint firstItem="Vuv-7G-YRb" firstAttribute="top" secondItem="Pjd-Mb-61t" secondAttribute="bottom" constant="40" id="T00-WU-fpS"/>
                             <constraint firstItem="xBZ-Ct-Xo5" firstAttribute="width" secondItem="h3m-J8-tnE" secondAttribute="width" constant="-40" id="Xzb-FM-yQu"/>
+                            <constraint firstItem="Xli-lz-2eE" firstAttribute="centerX" secondItem="h3m-J8-tnE" secondAttribute="centerX" id="i5W-YU-5AF"/>
                             <constraint firstItem="Pjd-Mb-61t" firstAttribute="height" secondItem="xBZ-Ct-Xo5" secondAttribute="height" id="jtj-yi-cjG"/>
                             <constraint firstItem="Vuv-7G-YRb" firstAttribute="width" secondItem="Pjd-Mb-61t" secondAttribute="width" id="mON-zX-FSW"/>
                             <constraint firstItem="Uog-uc-Ptx" firstAttribute="centerX" secondItem="h3m-J8-tnE" secondAttribute="centerX" id="nOc-T3-5Oc"/>
                             <constraint firstItem="Vbs-jG-C5C" firstAttribute="leading" secondItem="bFz-Xn-ki9" secondAttribute="leading" constant="61" id="pya-w7-ygS"/>
                             <constraint firstItem="Uog-uc-Ptx" firstAttribute="centerY" secondItem="h3m-J8-tnE" secondAttribute="centerY" id="qRo-9y-zHx"/>
                             <constraint firstItem="Pjd-Mb-61t" firstAttribute="width" secondItem="xBZ-Ct-Xo5" secondAttribute="width" id="rod-dQ-oId"/>
+                            <constraint firstItem="Xli-lz-2eE" firstAttribute="height" secondItem="Vuv-7G-YRb" secondAttribute="height" id="rtG-Hs-Wp8"/>
                             <constraint firstItem="Uog-uc-Ptx" firstAttribute="height" secondItem="h3m-J8-tnE" secondAttribute="height" id="s8Y-Wk-Vof"/>
+                            <constraint firstItem="Vuv-7G-YRb" firstAttribute="top" secondItem="Xli-lz-2eE" secondAttribute="bottom" constant="30" id="udA-pm-IaB"/>
                             <constraint firstItem="Pjd-Mb-61t" firstAttribute="top" secondItem="xBZ-Ct-Xo5" secondAttribute="bottom" constant="20" id="yLF-Ff-YQp"/>
                         </constraints>
                     </view>
@@ -119,6 +151,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="loginButton" destination="Vuv-7G-YRb" id="v9x-J7-GH4"/>
                         <outlet property="loginButtonConstraint" destination="LlX-6x-cnz" id="Ma5-1G-0d8"/>
                         <outlet property="logoContraint" destination="OvQ-wU-aZk" id="Tu7-OT-AX5"/>
                         <outlet property="passwordConstraint" destination="PIB-k0-2Xi" id="66t-e8-EzU"/>
@@ -134,7 +167,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jxQ-Ot-MAN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1079.5" y="7039.5"/>
+            <point key="canvasLocation" x="1079" y="7039"/>
         </scene>
     </scenes>
     <resources>

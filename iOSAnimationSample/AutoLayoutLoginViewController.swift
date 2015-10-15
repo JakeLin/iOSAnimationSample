@@ -16,12 +16,15 @@ class AutoLayoutLoginViewController: UIViewController {
   @IBOutlet var bubbleImageViewGroup2: [UIImageView]!
   @IBOutlet var usernameTextField: UITextField!
   @IBOutlet var passwordTextField: UITextField!
+  @IBOutlet var loginButton: UIButton!
   
   @IBOutlet var logoContraint: NSLayoutConstraint!
   @IBOutlet var usernameConstraint: NSLayoutConstraint!
   @IBOutlet var passwordConstraint: NSLayoutConstraint!
   @IBOutlet var loginButtonConstraint: NSLayoutConstraint!
   
+  // Customer UI
+  let spinner = UIActivityIndicatorView(activityIndicatorStyle: .WhiteLarge)
   
   var centerConstraintEndConstant : CGFloat = 0
 
@@ -68,10 +71,17 @@ class AutoLayoutLoginViewController: UIViewController {
   
   //MARK: IB actions
   
-  @IBAction func startAnimation(sender: AnyObject) {
+  @IBAction func startAnimationDidTap(sender: AnyObject) {
     animate()
   }
   
+  @IBAction func loginDidTap(sender: AnyObject) {
+    loginButton.addSubview(spinner)
+    spinner.frame.origin = CGPointMake(12, 12)
+    spinner.startAnimating()
+    
+    
+  }
   
   // MARK: Private methods
   
