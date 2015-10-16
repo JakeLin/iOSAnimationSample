@@ -17,12 +17,14 @@ class AutoLayoutLoginViewController: UIViewController {
   @IBOutlet var usernameTextField: UITextField!
   @IBOutlet var passwordTextField: UITextField!
   @IBOutlet var loginButton: UIButton!
+  @IBOutlet var warningMessageView: UIView!
   
   @IBOutlet var logoContraint: NSLayoutConstraint!
   @IBOutlet var usernameConstraint: NSLayoutConstraint!
   @IBOutlet var passwordConstraint: NSLayoutConstraint!
   @IBOutlet var loginButtonConstraint: NSLayoutConstraint!
   @IBOutlet var loginButtonTopMarginConstraint: NSLayoutConstraint!
+  @IBOutlet var loginButtonWidthConstraint: NSLayoutConstraint!
   
   // Customer UI
   let spinner = UIActivityIndicatorView(activityIndicatorStyle: .WhiteLarge)
@@ -67,6 +69,7 @@ class AutoLayoutLoginViewController: UIViewController {
     usernameConstraint.constant = centerConstraintEndConstant - view.frame.width
     passwordConstraint.constant = centerConstraintEndConstant - view.frame.width
     loginButtonConstraint.constant = centerConstraintEndConstant - view.frame.width
+    loginButtonWidthConstraint.constant = view.frame.width - 20 * 2
   }
   
   
@@ -82,9 +85,24 @@ class AutoLayoutLoginViewController: UIViewController {
     spinner.startAnimating()
     
     loginButtonTopMarginConstraint.constant = 120
-    UIView.animateWithDuration(0.3, delay: 0.2, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.5, options: [], animations: {
+    loginButtonWidthConstraint.constant -= 60
+    UIView.animateWithDuration(0.3, delay: 0.2, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.5, options: [], animations: { () -> Void in
       self.view.layoutIfNeeded()
-      }, completion: nil)
+      }) { _ in
+        
+        self.spinner.removeFromSuperview()
+        self.loginButtonWidthConstraint.constant += 60
+        UIView.animateWithDuration(1.5, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 0, options: [], animations: { () -> Void in
+          self.view.layoutIfNeeded()
+          }, completion: nil)
+        
+        UIView.transitionWithView(self.warningMessageView,
+          duration: 0.3,
+          options: [.TransitionFlipFromTop, .CurveEaseOut],
+          animations: {
+            self.warningMessageView.hidden = false
+          }, completion: nil)
+    }
   }
   
   // MARK: Private methods
