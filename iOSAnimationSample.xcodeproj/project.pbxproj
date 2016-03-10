@@ -14,8 +14,8 @@
 		AE337B3E1AF26525005F4AE1 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE337B3D1AF26525005F4AE1 /* ColorViewController.swift */; };
 		AE337B401AF2E1F0005F4AE1 /* RotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE337B3F1AF2E1F0005F4AE1 /* RotationViewController.swift */; };
 		AE6660241B0F1F5800C0B75C /* KeyframeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6660231B0F1F5800C0B75C /* KeyframeViewController.swift */; };
-		AE726BC31BC7EF0400D8060A /* AutoLayoutLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE726BC21BC7EF0400D8060A /* AutoLayoutLoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		AE726BC61BC7F02E00D8060A /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE726BC41BC7F02E00D8060A /* Login.storyboard */; settings = {ASSET_TAGS = (); }; };
+		AE726BC31BC7EF0400D8060A /* AutoLayoutLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE726BC21BC7EF0400D8060A /* AutoLayoutLoginViewController.swift */; };
+		AE726BC61BC7F02E00D8060A /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE726BC41BC7F02E00D8060A /* Login.storyboard */; };
 		AE80A0C61B08C9E70013F169 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE80A0C51B08C9E70013F169 /* LoginViewController.swift */; };
 		AE8A3A591AF2598200815F4B /* OpacityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8A3A581AF2598200815F4B /* OpacityViewController.swift */; };
 		AECE40101AEF7274005A5415 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECE400F1AEF7274005A5415 /* AppDelegate.swift */; };
@@ -194,7 +194,7 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = JakeLin;
 				TargetAttributes = {
 					AECE40091AEF7274005A5415 = {
@@ -333,6 +333,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -396,6 +397,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iOSAnimationSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JakeLin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -406,6 +408,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iOSAnimationSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JakeLin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -424,6 +427,7 @@
 				);
 				INFOPLIST_FILE = iOSAnimationSampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JakeLin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSAnimationSample.app/iOSAnimationSample";
 			};
@@ -439,6 +443,7 @@
 				);
 				INFOPLIST_FILE = iOSAnimationSampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JakeLin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSAnimationSample.app/iOSAnimationSample";
 			};
