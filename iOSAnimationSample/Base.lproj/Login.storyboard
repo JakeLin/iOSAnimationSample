@@ -136,9 +136,11 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="dotImageView" destination="Vbs-jG-C5C" id="mwu-ce-0sM"/>
                         <outlet property="loginButton" destination="Vuv-7G-YRb" id="v9x-J7-GH4"/>
                         <outlet property="loginButtonTopMarginConstraint" destination="nSC-jH-mIF" id="yuL-Za-c6v"/>
                         <outlet property="loginButtonWidthConstraint" destination="MA3-Ul-qBj" id="GRM-9I-bY4"/>
+                        <outlet property="logoImageView" destination="bFz-Xn-ki9" id="H5g-my-72H"/>
                         <outlet property="passwordTextField" destination="Pjd-Mb-61t" id="cpW-H7-ngB"/>
                         <outlet property="usernameTextField" destination="xBZ-Ct-Xo5" id="a7G-CI-DGY"/>
                         <outlet property="warningMessageView" destination="Xli-lz-2eE" id="031-Ht-27C"/>

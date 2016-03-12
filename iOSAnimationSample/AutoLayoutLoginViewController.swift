@@ -13,6 +13,8 @@ class AutoLayoutLoginViewController: UIViewController {
   //MARK: IB outlets
   @IBOutlet var bubbleImageViewGroup1: [UIImageView]!
   @IBOutlet var bubbleImageViewGroup2: [UIImageView]!
+  @IBOutlet var dotImageView: UIImageView!
+  @IBOutlet var logoImageView: UIImageView!
   @IBOutlet var usernameTextField: UITextField!
   @IBOutlet var passwordTextField: UITextField!
   @IBOutlet var loginButton: UIButton!
@@ -54,6 +56,8 @@ class AutoLayoutLoginViewController: UIViewController {
     passwordTextField.addSubview(passwordImageView)
     
     // Prepare the elements for animations
+    logoImageView.transform = CGAffineTransformMakeTranslation(-view.frame.width, 0)
+    dotImageView.transform = CGAffineTransformMakeTranslation(-view.frame.width, 0)
     usernameTextField.transform = CGAffineTransformMakeTranslation(-view.frame.width, 0)
     passwordTextField.transform = CGAffineTransformMakeTranslation(-view.frame.width, 0)
     loginButton.transform = CGAffineTransformMakeTranslation(-view.frame.width, 0)
@@ -114,10 +118,16 @@ class AutoLayoutLoginViewController: UIViewController {
     
     UIView.animateWithDuration(0.3, delay: 0.2, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.5, options: [],
       animations: {
-        self.usernameTextField.transform = CGAffineTransformIdentity
+        self.logoImageView.transform = CGAffineTransformIdentity
       }, completion: nil
     )
     
+    UIView.animateWithDuration(0.6, delay: 0.25, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: [],
+      animations: {
+        self.dotImageView.transform = CGAffineTransformIdentity
+      }, completion: nil
+    )
+
     UIView.animateWithDuration(0.3, delay: 0.3, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.5, options: [],
       animations: {
         self.usernameTextField.transform = CGAffineTransformIdentity
