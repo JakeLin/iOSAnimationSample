@@ -18,23 +18,14 @@ class AutoLayoutLoginViewController: UIViewController {
   @IBOutlet var loginButton: UIButton!
   @IBOutlet var warningMessageView: UIView!
   
-  @IBOutlet var logoContraint: NSLayoutConstraint!
-  @IBOutlet var usernameConstraint: NSLayoutConstraint!
-  @IBOutlet var passwordConstraint: NSLayoutConstraint!
-  @IBOutlet var loginButtonConstraint: NSLayoutConstraint!
   @IBOutlet var loginButtonTopMarginConstraint: NSLayoutConstraint!
   @IBOutlet var loginButtonWidthConstraint: NSLayoutConstraint!
   
   // Customer UI
   let spinner = UIActivityIndicatorView(activityIndicatorStyle: .WhiteLarge)
   
-  var centerConstraintEndConstant : CGFloat = 0
-
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    // Save all constraints end constants to animate.
-    centerConstraintEndConstant = logoContraint.constant
     
     // Setup all bubbles start transform
     for bubble in bubbleImageViewGroup1 {
@@ -63,11 +54,11 @@ class AutoLayoutLoginViewController: UIViewController {
     passwordTextField.addSubview(passwordImageView)
     
     // Set all constraints to start constants
-    logoContraint.constant = centerConstraintEndConstant - view.frame.width
-    usernameConstraint.constant = centerConstraintEndConstant - view.frame.width
-    passwordConstraint.constant = centerConstraintEndConstant - view.frame.width
-    loginButtonConstraint.constant = centerConstraintEndConstant - view.frame.width
     loginButtonWidthConstraint.constant = view.frame.width - 20 * 2
+    
+    usernameTextField.transform = CGAffineTransformMakeTranslation(-view.frame.width, 0)
+    passwordTextField.transform = CGAffineTransformMakeTranslation(-view.frame.width, 0)
+    loginButton.transform = CGAffineTransformMakeTranslation(-view.frame.width, 0)
   }
   
   //MARK: - IBActions
@@ -123,31 +114,27 @@ class AutoLayoutLoginViewController: UIViewController {
       }, completion: nil
     )
     
-    logoContraint.constant = centerConstraintEndConstant
     UIView.animateWithDuration(0.3, delay: 0.2, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.5, options: [],
       animations: {
-        self.view.layoutIfNeeded()
+        self.usernameTextField.transform = CGAffineTransformIdentity
       }, completion: nil
     )
     
-    usernameConstraint.constant = centerConstraintEndConstant
     UIView.animateWithDuration(0.3, delay: 0.3, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.5, options: [],
       animations: {
-        self.view.layoutIfNeeded()
+        self.usernameTextField.transform = CGAffineTransformIdentity
       }, completion: nil
     )
     
-    passwordConstraint.constant = centerConstraintEndConstant
     UIView.animateWithDuration(0.3, delay: 0.4, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.5, options: [],
       animations: {
-        self.view.layoutIfNeeded()
+        self.passwordTextField.transform = CGAffineTransformIdentity
       }, completion: nil
     )
     
-    loginButtonConstraint.constant = centerConstraintEndConstant
     UIView.animateWithDuration(0.3, delay: 0.5, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.5, options: [],
       animations: {
-        self.view.layoutIfNeeded()
+        self.loginButton.transform = CGAffineTransformIdentity
       }, completion: nil
     )
   }
