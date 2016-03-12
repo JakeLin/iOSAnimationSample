@@ -53,9 +53,7 @@ class AutoLayoutLoginViewController: UIViewController {
     passwordImageView.frame.origin = CGPoint(x: 12, y: 9)
     passwordTextField.addSubview(passwordImageView)
     
-    // Set all constraints to start constants
-    loginButtonWidthConstraint.constant = view.frame.width - 20 * 2
-    
+    // Prepare the elements for animations
     usernameTextField.transform = CGAffineTransformMakeTranslation(-view.frame.width, 0)
     passwordTextField.transform = CGAffineTransformMakeTranslation(-view.frame.width, 0)
     loginButton.transform = CGAffineTransformMakeTranslation(-view.frame.width, 0)

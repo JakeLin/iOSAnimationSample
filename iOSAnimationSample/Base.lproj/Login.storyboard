@@ -58,7 +58,6 @@
                                 <rect key="frame" x="20" y="296" width="374" height="60"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="374" id="BIW-rJ-jNg"/>
                                     <constraint firstAttribute="height" constant="60" id="vc4-4g-Ucu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
@@ -86,7 +85,7 @@
                                 <rect key="frame" x="20" y="296" width="374" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid username or password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fy-Wj-Jzt">
-                                        <rect key="frame" x="74" y="20" width="227" height="21"/>
+                                        <rect key="frame" x="74" y="20.5" width="227" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -115,6 +114,7 @@
                             <constraint firstItem="bFz-Xn-ki9" firstAttribute="top" secondItem="ZGT-Di-C92" secondAttribute="bottom" constant="90" id="Jg9-Qa-G8b"/>
                             <constraint firstItem="8Ye-D9-CQ8" firstAttribute="top" secondItem="Fr6-wP-a9f" secondAttribute="bottom" constant="20" id="KRm-ld-Grv"/>
                             <constraint firstItem="Vuv-7G-YRb" firstAttribute="centerX" secondItem="h3m-J8-tnE" secondAttribute="centerX" id="LlX-6x-cnz"/>
+                            <constraint firstItem="Vuv-7G-YRb" firstAttribute="width" secondItem="h3m-J8-tnE" secondAttribute="width" constant="-40" id="MA3-Ul-qBj"/>
                             <constraint firstItem="bFz-Xn-ki9" firstAttribute="centerX" secondItem="h3m-J8-tnE" secondAttribute="centerX" id="OvQ-wU-aZk"/>
                             <constraint firstItem="Pjd-Mb-61t" firstAttribute="centerX" secondItem="h3m-J8-tnE" secondAttribute="centerX" id="PIB-k0-2Xi"/>
                             <constraint firstItem="xBZ-Ct-Xo5" firstAttribute="width" secondItem="h3m-J8-tnE" secondAttribute="width" constant="-40" id="Xzb-FM-yQu"/>
@@ -138,7 +138,7 @@
                     <connections>
                         <outlet property="loginButton" destination="Vuv-7G-YRb" id="v9x-J7-GH4"/>
                         <outlet property="loginButtonTopMarginConstraint" destination="nSC-jH-mIF" id="yuL-Za-c6v"/>
-                        <outlet property="loginButtonWidthConstraint" destination="BIW-rJ-jNg" id="SGw-Gb-E2J"/>
+                        <outlet property="loginButtonWidthConstraint" destination="MA3-Ul-qBj" id="GRM-9I-bY4"/>
                         <outlet property="passwordTextField" destination="Pjd-Mb-61t" id="cpW-H7-ngB"/>
                         <outlet property="usernameTextField" destination="xBZ-Ct-Xo5" id="a7G-CI-DGY"/>
                         <outlet property="warningMessageView" destination="Xli-lz-2eE" id="031-Ht-27C"/>
